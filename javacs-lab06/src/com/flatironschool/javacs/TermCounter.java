@@ -37,7 +37,13 @@ public class TermCounter {
 	 */
 	public int size() {
         // TODO: fill this in.
-		return -1;
+        int counter = 0;
+        for (String str: this.map.keySet()) {
+        	counter += this.map.get(str);
+        }
+        if (counter == 0) return -1;
+        return counter; 
+		
 	}
 
 	/**
